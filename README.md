@@ -1,10 +1,14 @@
 # Getting Started with MatchMe
 
-This repository includes code for the homepage and upload page of the MatchMe app.
+This repository includes front-end code for the MatchMe app.
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Run to install dependencies.
 
 ### `npm start`
 
