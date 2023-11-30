@@ -1,0 +1,45 @@
+/* HomePage.css */
+.App {
+  text-align: center;
+  background-image: url('../pics/home_background.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 30px; /* 增大字体大小 */
+  color: rgb(159, 179, 195); /* 保持颜色不变 */
+  font-weight: bold;
+  margin-bottom: 20px; /* 添加一些底部间距 */
+}
+
+.reminder {
+  font-size: 20px;
+  max-width: 60%; /* 适当调整宽度 */
+  margin: 10px auto; /* 上下间距 */
+  font-family: 'Bowlby One SC';
+  color: rgb(159, 179, 195);
+}
+
+
+
+.getstarted-button {
+  margin-top: 30px; /* 调整上边距 */
+  padding: 10px 20px; /* 按钮内边距 */
+  font-size: 20px; /* 字体大小 */
+  background-color: lightblue; /* 背景颜色 */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Bowlby One SC'; /* 调整字体风格与其他文本一致 */
+}
