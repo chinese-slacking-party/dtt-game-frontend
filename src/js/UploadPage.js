@@ -7,9 +7,8 @@ function UploadPage() {
     return (
         <div className="App">
           <header>
-            {/* <img src={matchmelogo} alt="Logo" className="logo" /> */}
-            <p className="reminder">Make your game experience uniquely yours 👨‍👩‍👧‍👦  </p> 
-            <p className="reminder"> Help your little one upload 3 photos of your family members to make the adventure even more personal and exciting!</p>
+          <img src={matchmelogo} alt="Logo" className="upload-logo" />
+            <p className="upload_reminder">Make your game experience uniquely yours 👨‍👩‍👧‍👦 Help your little one upload 3 photos of your family members to make the adventure even more personal! </p> 
           </header>
           <div className="photo-upload-container">
             {[1, 2, 3].map((item) => (

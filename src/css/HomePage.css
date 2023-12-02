@@ -1,7 +1,7 @@
 /* HomePage.css */
 .App {
   text-align: center;
-  background-image: url('../pics/home_background.png');
+  background-image: url(/Users/mingqian/dtt-game-frontend/src/pics/background_image.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -11,35 +11,33 @@
   align-items: center;
 }
 
-.logo {
-  width: 300px;
-  margin-bottom: 20px;
+.home-logo {
+  width: 600px;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: -70px;
 }
 
-.title {
-  font-size: 30px; /* 增大字体大小 */
-  color: rgb(159, 179, 195); /* 保持颜色不变 */
-  font-weight: bold;
-  margin-bottom: 20px; /* 添加一些底部间距 */
-}
-
-.reminder {
+.home_reminder {
   font-size: 20px;
-  max-width: 60%; /* 适当调整宽度 */
-  margin: 10px auto; /* 上下间距 */
-  font-family: 'Bowlby One SC';
+  max-width: 50%; /* 适当调整宽度 */
+  margin: 0px auto; /* 上下间距 */
+  font-family: Helvetica;
+  line-height: 1.5;
   color: rgb(159, 179, 195);
 }
 
 
 
 .getstarted-button {
-  margin-top: 30px; /* 调整上边距 */
+  margin-top: 95px; /* 调整上边距 */
   padding: 10px 20px; /* 按钮内边距 */
   font-size: 20px; /* 字体大小 */
-  background-color: lightblue; /* 背景颜色 */
+  background-color: rgb(159, 179, 195); /* 背景颜色 */
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-family: 'Bowlby One SC'; /* 调整字体风格与其他文本一致 */
+  color: rgb(238, 234, 231);
 }
