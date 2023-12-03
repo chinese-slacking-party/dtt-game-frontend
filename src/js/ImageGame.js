@@ -5,9 +5,12 @@ import backgroundMusic from '../music/bg3.mp3';
 import successSound from '../music/success.mp3';
 import failedSound from '../music/failed.mp3';
 import wrongSelection from '../music/wrong_selection.mp3';
+import { Link } from 'react-router-dom';
+
 
 const bgMusic = new Audio(backgroundMusic);
 bgMusic.loop = true;
+bgMusic.volume = 0.4;
 
 const ImageGame = () => {
     const [selectedImages, setSelectedImages] = useState([]);
@@ -118,6 +121,19 @@ const ImageGame = () => {
         }
     };
 
+    if (level === 4) {
+        // 在第4关成功后，导航到"CongratsPage"页面
+        return (
+          <div className="content-wrapper">
+            <div className="centered-container">
+              <p className="gohome_reminder">Congrats! You have completed all levels!</p>
+              <Link to="/">
+                <button className="gohome-button">Go to Home Page</button>
+              </Link>
+            </div>
+          </div>
+        );
+      }
 
     return (
         <div className="content-wrapper">
