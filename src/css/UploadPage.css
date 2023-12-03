@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: url(/Users/mingqian/dtt-game-frontend/src/pics/background_image.png);
+  background-image: url(../pics/background_image.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
