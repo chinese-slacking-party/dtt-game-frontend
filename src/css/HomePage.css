@@ -23,16 +23,15 @@
 .home_reminder {
   font-size: 20px;
   max-width: 50%; /* 适当调整宽度 */
-  margin: 0px auto; /* 上下间距 */
+  margin: 5px auto; /* 上下间距 */
   font-family: Helvetica;
   line-height: 1.5;
   color: rgb(159, 179, 195);
 }
 
 
-
 .getstarted-button {
-  margin-top: 95px; /* 调整上边距 */
+  margin-top: 15px; /* 调整上边距 */
   padding: 10px 20px; /* 按钮内边距 */
   font-size: 20px; /* 字体大小 */
   background-color: rgb(159, 179, 195); /* 背景颜色 */
@@ -40,4 +39,15 @@
   border-radius: 5px;
   cursor: pointer;
   color: rgb(238, 234, 231);
+}
+
+.name-input {
+  margin-top: 20px; /* 调整上边距 */
+  width: 10%; /* 输入框宽度 */
+  padding: 8px; /* 内边距 */
+  margin: 10px auto; /* 上下外边距 */
+  font-size: 15px; /* 字体大小 */
+  border-radius: 5px; /* 边框圆角 */
+  border: 2px solid rgb(159, 179, 195); /* 边框样式 */
+  outline: none; /* 移除聚焦时的轮廓 */
 }
