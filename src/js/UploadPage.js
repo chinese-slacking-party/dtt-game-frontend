@@ -16,7 +16,7 @@ function UploadPage() {
     files.forEach((file, index) => {
       const formData = new FormData();
       formData.append('file', file);
-      const url = `/api/v1/users/:name/files/${file.name}`;
+      const url = `/api/v1/users/:name/files/${file.name}`; // TODO: replace :name with actual name after completing login page
       fetch(url, {
         method: 'POST',
         body: formData,
