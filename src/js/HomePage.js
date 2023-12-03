@@ -24,6 +24,7 @@ function HomePage() {
             setIsNameEntered(true); // 允许跳转
         } catch (error) {
             console.error('Error posting session data:', error);
+            alert("Internal error, please contact admin");
         }
     };
 

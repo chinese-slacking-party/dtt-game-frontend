@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './js/HomePage';
 import UploadPage from './js/UploadPage';
 import ImageGame from './js/ImageGame';
-
+import axios from 'axios';
+axios.defaults.withCredentials = true;
 
 function MatchMe() {
   return (
