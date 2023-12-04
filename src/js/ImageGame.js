@@ -121,7 +121,7 @@ const ImageGame = () => {
         }
     };
 
-    if (level === 4) {
+    if (level === 5) {
         // 在第4关成功后，导航到"CongratsPage"页面
         return (
           <div className="content-wrapper">

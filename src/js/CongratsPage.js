@@ -6,7 +6,7 @@ const CongratsPage = () => {
   return (
     <div>
       <h2>Congratulations! You have completed all levels!</h2>
-      <Link to="/">Go to Home Page</Link>
+      <Link to="/">Back to Home Page</Link>
     </div>
   );
 };
