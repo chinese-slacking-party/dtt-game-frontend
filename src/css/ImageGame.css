@@ -2,7 +2,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-image: url(../pics/background_image.png);
+    background-image: url(../pics/home_background.png);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
