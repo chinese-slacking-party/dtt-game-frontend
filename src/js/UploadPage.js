@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import '../css/UploadPage.css';
 import matchmelogo from '../pics/matchmelogo.svg';
+import axios from 'axios'; // 导入 axios
+
 
 function UploadPage() {
   const [files, setFiles] = useState([]);
@@ -27,19 +29,21 @@ function UploadPage() {
       await Promise.all(files.map(async (file) => {
         const formData = new FormData();
         formData.append('file', file);
-        const url = `/api/v1/users/:name/files/${file.name}`; // TODO: replace :name with actual name
-        await fetch(url, {
-          method: 'POST',
-          body: formData,
+        const url = `/api/v1/users/files/${file.name}`; // TODO: replace :name with actual name
+
+        // 使用 axios 替换 fetch
+        await axios.post(url, formData, {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
         });
 
         const albumData = {
           desc: "some description",
           filename: file.name
         };
-        await fetch('/api/v1/album/new', {
-          method: 'POST',
-          body: JSON.stringify(albumData),
+
+        await axios.post('/api/v1/album/new', albumData, {
           headers: {
             'Content-Type': 'application/json'
           }
@@ -49,7 +53,7 @@ function UploadPage() {
       navigate("/ImageGame"); // Navigate after uploads are complete
     } catch (error) {
       console.error("Upload error:", error);
-      // Handle errors here
+      alert("Please contact your admin");
     }
   };
 
