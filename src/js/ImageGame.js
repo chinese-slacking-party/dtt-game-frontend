@@ -46,7 +46,7 @@ const ImageGame = () => {
 
     const fetchImagesForLevel = async (currentLevel) => {
         try {
-            const response = await axios.post(`http://127.0.0.1:5000/api/v1/game/match/${currentLevel}/new`);
+            const response = await axios.post(`/api/v1/game/match/${currentLevel}/new`);
             setGameData(response.data); // 更新游戏数据
             setSelectedImages([]); // 清空选中的图片
             setShowAlert(false); // 隐藏提示
