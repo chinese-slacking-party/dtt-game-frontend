@@ -20,7 +20,7 @@ function HomePage() {
         }
 
         try {
-            const response = await axios.post('http://127.0.0.1:5000/api/v1/session', { name });
+            const response = await axios.post('api/v1/session', { name });
             console.log(response.data); // 打印响应数据
             setIsNameEntered(true); // 允许跳转
             setButtonText('Get Started'); // 更新按钮文本为 'Get Started'
