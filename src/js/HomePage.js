@@ -7,6 +7,7 @@ import matchmelogo from '../pics/matchmelogo.svg';
 function HomePage() {
     const [name, setName] = useState('');
     const [isNameEntered, setIsNameEntered] = useState(false);
+    const [buttonText, setButtonText] = useState('Confirm'); // 初始按钮文本为 'Confirm'
 
     const handleNameChange = (event) => {
         setName(event.target.value);
@@ -22,6 +23,7 @@ function HomePage() {
             const response = await axios.post('http://127.0.0.1:5000/api/v1/session', { name });
             console.log(response.data); // 打印响应数据
             setIsNameEntered(true); // 允许跳转
+            setButtonText('Get Started'); // 更新按钮文本为 'Get Started'
         } catch (error) {
             console.error('Error posting session data:', error);
             alert("Internal error, please contact admin");
@@ -46,7 +48,7 @@ function HomePage() {
                     <button className="getstarted-button">Get Started</button>
                 </Link>
             ) : (
-                <button onClick={handleSubmit} className="getstarted-button">Get Started</button>
+                <button onClick={handleSubmit} className="getstarted-button">{buttonText}</button>
             )}
         </div>
     );
